@@ -7,6 +7,7 @@
     <title>Factorial in Php</title>
 </head>
 <body>
+<input type="text" value='<?php echo $_GET['name']?>'>
 <h2>
     <?php
     function fact($a){
