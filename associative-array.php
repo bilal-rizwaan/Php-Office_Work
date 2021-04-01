@@ -8,13 +8,8 @@
 </head>
 <body>
     <?php
-    $record=(
-        "Sam" => "21",
-        "Jerry" => "22",
-        "John" => "20",
-        "Harry" => "23",
-        "Manual" => "24"
-        )
+    $record=("Sam" => "21","Jerry" => "22","John" => "20","Harry" => "23","Manual" => "24");
+        echo $record[1];
     
     ?>
 </body>
