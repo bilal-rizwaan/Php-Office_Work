@@ -9,10 +9,12 @@
 </head>
 <body>
     <?php
+        echo "<pre>";
         $record=array("Sam" => "21","Jerry" => "22","John" => "20","Harry" => "23","Manual" => "24");
         foreach($record as $data=>$age){
-            echo $data . '&nbsp;'. $age. '</br>';
+            echo $data . ' <===> '. $age. '</br>';
         }
+        echo "</pre>";
     ?>
 </body>
 </html>
