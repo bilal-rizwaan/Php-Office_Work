@@ -17,9 +17,10 @@ echo '<pre>';
             array('Fam', 21 , 'fam@gmail.com')
         );
         $len=count($a);
-        for($i=0;$i<$len;$i++){
-            for($j=0;$j<$len;$j++){
-                echo $a[$i][$j];
+        for($i=0;$i<=$len;$i++)
+        {
+            for($j=0;$j<=$len;$j++){
+                echo $a[$i][$j].'</br>';
             }
         }
 echo '</pre>';
