@@ -10,8 +10,12 @@
 <h2>
     <?php
     function fact($a){
-        $f=0;
-        $f= $f * $a;    
+        $f=1;
+        for($i=1;$i<$a;$i++){
+            $f=$f*$a;
+        }
+        return $f;
+        
     }
     fact(5);
     ?>
