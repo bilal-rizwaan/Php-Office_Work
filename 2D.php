@@ -8,18 +8,21 @@
 </head>
 <body>
 <?php
-$a=array(
-    array('Sam',21,'sam@gmail.com'),
-    array('Jam',21,'jam@gmail.com'),
-    array('Cam',21,'cam@gmail.com'),
-    array('Dam',21,'dam@gmail.com'),
-    array('Fam',21,'fam@gmail.com')
-);
-$len=count($a);
-for($i=0;$i<$len;$i++){
-
-}
-
+echo '<pre>';
+        $a=array(
+            array('Sam', 21 , 'sam@gmail.com'),
+            array('Jam', 21 , 'jam@gmail.com'),
+            array('Cam', 21 , 'cam@gmail.com'),
+            array('Dam', 21 , 'dam@gmail.com'),
+            array('Fam', 21 , 'fam@gmail.com')
+        );
+        $len=count($a);
+        for($i=0;$i<$len;$i++){
+            for($j=0;$j<$len;$j++){
+                echo $a[$i][$j];
+            }
+        }
+echo '</pre>';
 ?>
     
 </body>
