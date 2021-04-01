@@ -7,29 +7,40 @@
     <title>Calculator Php</title>
 </head>
 <body>
-<input type="text" name="num1">
-<select name="operation">
-<option value="add">Addition</option>
-<option value="sub">Subtract</option>
-<option value="mul">Multiply</option>
-<option value="div">Divide</option>
-</select>
-<input type="text" name="num2">
-Result ==> 
-<input type="text" name="total">
-<input type="button" name="sub" value="Click">
-
-<?php
-if(isset($_POST['sub'])){
-    $num1=$_POST['num1'];
-    $num1=$_POST['num2'];
-    $num1=$_POST['operation'];
-    // $num1=$_POST['num1'];
-
-}
-
-
-?>
-
+    <form method="POST">
+            <input type="number" name="num1" required autocomplete="off">
+                    <select name="operation">
+                        <option value="add">Addition</option>
+                        <option value="sub">Subtract</option>
+                        <option value="mul">Multiply</option>
+                        <option value="div">Divide</option>
+                    </select>
+            <input type="number" name="num2" required autocomplete="off">
+            <input type="submit" name="submit" value="submit">
+    </form>
+        <p>
+        <?php 
+        if (isset($_POST['submit'])) {
+            $num1 = $_POST['num1'];
+            $num2 = $_POST['num2'];
+            $operation = $_POST['operation'];
+            switch ($operation) {
+                case "add":$sum = $num1 + $num2;
+                echo "The Sum of to number is $sum";
+                    break;
+                case "sub":$sub = $num1 - $num2;
+                    echo "The Subtract of two number is is $sub";
+                    break;
+                case "mul":$mul = $num1 * $num2;
+                    echo "The Multiply of two number is $mul";
+                    break;
+                case "div":$div = $num1 / $num2;
+                    echo "The Division of two number is $div";
+                    break;
+                default :echo"The Result is Not Found";
+            }
+            }?>
+        </p>
 </body>
+
 </html>
