@@ -11,13 +11,13 @@
     <?php
     function fact($a){
         $f=1;
-        for($i=1;$i<$a;$i++){
-            $f=$f*$i;
+        for($i=1;$i<=$a;$i++)
+        {
+        $f=$f*$i;
         }
-        return $f;
-        
+        return $f;       
     }
-    fact(5);
+    echo fact(5)
     ?>
 </h2>
     
