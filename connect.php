@@ -7,6 +7,10 @@
     <title>Php And MySql Connection</title>
 </head>
 <body>
-    
+    <form action="process.php" method="post">
+        <input type="text" name="user">
+        <input type="password" name="pass">
+        <input type="submit" name="submit">
+    </form>
 </body>
 </html>

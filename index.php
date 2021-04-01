@@ -7,7 +7,6 @@ while($a<=10){
     echo '<li>'. $a . 'Php <br>';
     $a++;
     echo "<ul>";
-
 }
 while($b<=10){
     echo '<li>'. $b . 'Php <br>';
