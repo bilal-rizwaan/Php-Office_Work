@@ -12,7 +12,6 @@
         foreach($record as $data=>$age){
             echo $data . '&nbsp;'. $age. '</br>';
         }
-    
     ?>
 </body>
 </html>
