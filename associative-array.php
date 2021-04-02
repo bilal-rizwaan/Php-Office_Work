@@ -16,5 +16,20 @@
         }
         echo "</pre>";
     ?>
+
+<?php
+        echo "<pre>";
+        $record=[
+                    ["Sam",21],
+                    ["Jerry",22],
+                    ["John",20],
+                    ["Harry",23],
+                    ["Manual",24],
+                ];
+        foreach($record as list($name,$age)){
+            echo  "$name and $age";
+        }
+        echo "</pre>";
+    ?>
 </body>
 </html>
