@@ -10,6 +10,7 @@
 <body>
     <?php
         echo "<pre>";
+        echo "<h1>Associative Array Iteration</h1>";
         $record=array("Sam" => "21","Jerry" => "22","John" => "20","Harry" => "23","Manual" => "24");
         foreach($record as $data=>$age){
             echo $data . ' <===> '. $age. '</br>';
@@ -19,6 +20,7 @@
 
 <?php
         echo "<pre>";
+        echo "<h1>2D Array Iteration</h1>";
         $record=[
                     ["Sam",21],
                     ["Jerry",22],
@@ -27,7 +29,7 @@
                     ["Manual",24],
                 ];
         foreach($record as list($name,$age)){
-            echo  "$name and $age";
+            echo  "$name <===>  $age <br>";
         }
         echo "</pre>";
     ?>
