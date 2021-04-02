@@ -8,12 +8,17 @@
 </head>
 <body>
     <form method="POST">
-
-    <input type="text" name="user">
-    <input type="submit" name="submit" value="Login">
-
-
+        <input type="text" name="user">
+        <input type="submit" name="submit" value="Login">
     </form>
-    
+    <?php
+    if(isset($_POST['submit'])){
+        echo $name=$_POST['user'];
+        if($name=="Bilal"){
+            header('location:index1.php');
+            die();
+        }
+    }
+    ?>
 </body>
 </html>
