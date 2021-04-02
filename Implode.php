@@ -7,11 +7,23 @@
     <title>Imlode In Php</title>
 </head>
 <body>
-    <pre>
-    <?php
-    $a=["Red","Green","Blue"];
-    echo implode(',',$a);
-    ?> 
-</pre>
+    <center>
+        <pre>
+            <?php
+            echo "<h1>Implode Function</h1>";
+            echo "<p>The implode() function returns a string from the elements of an array. </p>";
+            $a=["Red","Green","Blue"];
+            $x = implode(',',$a);
+            echo $x;
+            
+
+            echo "<h1>Explode Function</h1>";
+            echo "<p>The explode() function breaks a string into an array.</p>";
+            $b=["Yellow","Purple","Brown"];
+            print_r(explode(",",$x));
+
+            ?> 
+        </pre>
+    </center>
 </body>
 </html>
