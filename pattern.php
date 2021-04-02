@@ -7,8 +7,13 @@
     <title>Pattern in Php</title>
 </head>
 <body>
-
-
-
+    <?php
+    
+    for($i=0;$i<=5;$i++){
+        for($j=0;$j<=$i;$j++){
+            echo $j."*" .'</br>';
+        }
+    }
+    ?>
 </body>
 </html>
