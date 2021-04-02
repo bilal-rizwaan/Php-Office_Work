@@ -15,13 +15,10 @@
             $a=["Red","Green","Blue"];
             $x = implode(',',$a);
             echo $x;
-            
-
             echo "<h1>Explode Function</h1>";
             echo "<p>The explode() function breaks a string into an array.</p>";
             $b=["Yellow","Purple","Brown"];
             print_r(explode(",",$x));
-
             ?> 
         </pre>
     </center>
