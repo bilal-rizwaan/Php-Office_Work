@@ -14,7 +14,8 @@
     <?php
     if(isset($_POST['submit'])){
         echo $name=$_POST['user'];
-        if($name=="Bilal"){
+        if($name=='Bilal'){
+            $_SESSION['$name']='Bilal';
             header('location:index1.php');
             die();
         }
