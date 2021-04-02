@@ -23,6 +23,8 @@ echo '<pre>';
                 echo $a[$i][$j].'</br>';
             }
         }
+
+        
 echo '</pre>';
 ?>
 </body>
