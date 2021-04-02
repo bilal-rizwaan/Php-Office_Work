@@ -7,20 +7,23 @@
     <title>Fun Php</title>
 </head>
 <body>
-
-<form method="POST">
-    <input type="text" name="lv1">
-    <input type="text" name="lv2">
-    <input type="submit" name="submit" value="submit">
-    <pre>
-    <?php
-    if(isset($_POST['submit'])){
-
-    }
-    
-    ?>
-    </pre>
-</form>
+<center>
+        <form method="POST">
+            <input type="text" name="lv1">
+            <input type="text" name="lv2">
+            <input type="submit" name="submit" value="submit">
+            <pre>
+            <?php
+            if(isset($_POST['submit'])){
+                $lv1=$_POST['lv1'];
+                $lv2=$_POST['lv2'];
+                $ran=rand(50,99);
+                echo $lv1 ." + ". $lv2 ." = " .$ran ."%";
+            }
+            ?>
+            </pre>
+        </form>
+</center>
     
 </body>
 </html>
